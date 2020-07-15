@@ -1,0 +1,31 @@
+{
+  "name": "abu",
+  "version": "1.0.0",
+  "description": "",
+  "main": "test.js",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha ./tests/test.js",
+    "test:e2e": "./node_modules/.bin/wdio wdio.conf.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/no4good/abu.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/no4good/abu/issues"
+  },
+  "homepage": "https://github.com/no4good/abu#readme",
+  "dependencies": {
+    "@wdio/cli": "^6.2.0",
+    "@wdio/local-runner": "^6.2.0",
+    "@wdio/mocha-framework": "^6.2.0",
+    "@wdio/selenium-standalone-service": "^6.1.14",
+    "@wdio/spec-reporter": "^6.1.23",
+    "chai": "^4.2.0",
+    "dotenv": "^8.2.0",
+    "supertest": "^4.0.2"
+  }
+}
