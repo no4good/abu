@@ -13,7 +13,8 @@ install:
 script:
   - docker login -u $SECRET_CLOUD_LOGIN -p $SECRET_CLOUD_PASS
   - docker pull no4good597/app
-  - docker run -d -p $PORT:$PORT --net="host" no4good597/app
+  - docker run -d -p 3001:3001 --net="host" no4good597/app
+  - docker ps
   - npm run test
   - docker run -d -p 4444:4444 --net="host" selenium/standalone-chrome:3.141.59-20200525
   - npm run test:e2e
